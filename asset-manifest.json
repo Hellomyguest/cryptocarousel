@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cryptocarousel/static/css/main.505b2425.css",
-    "main.js": "/cryptocarousel/static/js/main.7e9fa3ee.js",
+    "main.js": "/cryptocarousel/static/js/main.5cd38cbf.js",
     "static/media/cryptoSmall.mp4": "/cryptocarousel/static/media/cryptoSmall.833ab0126a282313bfa7.mp4",
     "static/media/crypto.mp4": "/cryptocarousel/static/media/crypto.d6d2477a358d08ba817d.mp4",
     "static/media/BackFirstGame.png": "/cryptocarousel/static/media/BackFirstGame.03a963cdc0b1c8dd04b9.png",
@@ -110,10 +110,10 @@
     "static/media/ArrowDownIcon.svg": "/cryptocarousel/static/media/ArrowDownIcon.b0b87959e5bf5bc39f5abaade81fa0e3.svg",
     "static/media/point.svg": "/cryptocarousel/static/media/point.9ac82a18c9ff750a060925ea3e7c5061.svg",
     "main.505b2425.css.map": "/cryptocarousel/static/css/main.505b2425.css.map",
-    "main.7e9fa3ee.js.map": "/cryptocarousel/static/js/main.7e9fa3ee.js.map"
+    "main.5cd38cbf.js.map": "/cryptocarousel/static/js/main.5cd38cbf.js.map"
   },
   "entrypoints": [
     "static/css/main.505b2425.css",
-    "static/js/main.7e9fa3ee.js"
+    "static/js/main.5cd38cbf.js"
   ]
 }
