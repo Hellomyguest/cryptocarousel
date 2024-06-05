@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import {
   MainPage,
   BitSpinPage,
@@ -35,9 +35,10 @@ export const routes = [
     path: "/programs",
     element: <LessonsPage />,
   },
+  { path: "*", element: <Navigate to="/" replace /> }
 ];
 
-const router = createBrowserRouter(routes);
+const router = createBrowserRouter(routes, {basename: '/'});
 
 function App() {
   return <RouterProvider router={router} />;
