@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {
   MainPage,
   BitSpinPage,
@@ -35,10 +35,9 @@ export const routes = [
     path: "/programs",
     element: <LessonsPage />,
   },
-  { path: "*", element: <Navigate to="/" replace /> }
 ];
 
-const router = createBrowserRouter(routes, {basename: '/'});
+const router = createBrowserRouter(routes, {basename: '/cryptocarousel'});
 
 function App() {
   return <RouterProvider router={router} />;
