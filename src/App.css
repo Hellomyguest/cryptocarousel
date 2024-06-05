@@ -1,0 +1,14 @@
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-track {
+  width: 0.25rem;
+  background: linear-gradient(#220F48 17.69%, #1F1A4A 41.67%, #091B47 56.36%, #130639 69.96%, #130531 82.05%, #220E2B 100%);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.25rem;
+  border-radius: 0.5rem;
+  background: #ff127f;
+}

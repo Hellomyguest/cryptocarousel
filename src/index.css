@@ -1,0 +1,96 @@
+/* ------------------- Specification -------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+img,
+span {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1235px;
+    margin-left: 115px;
+}
+
+
+/* 100 */
+
+@font-face {
+    font-family: 'MullerThin';
+    src: url(./fonts/MullerThin.ttf);
+}
+
+
+/* 400 */
+
+@font-face {
+    font-family: 'MullerRegular';
+    src: url(./fonts/MullerRegular.ttf);
+}
+
+
+/* 500 */
+
+@font-face {
+    font-family: 'MullerMedium';
+    src: url(./fonts/MullerMedium.ttf);
+}
+
+
+/* 700 */
+
+@font-face {
+    font-family: 'MullerBold';
+    src: url(./fonts/MullerBold.ttf);
+}
+
+
+/*  */
+
+@font-face {
+    font-family: 'MullerHeavy';
+    src: url(./fonts/MullerHeavy.ttf);
+}
+
+
+/* 800 */
+
+@font-face {
+    font-family: 'MullerExtraBold';
+    src: url(./fonts/MullerExtraBold.ttf);
+}
+
+
+/* 900 */
+
+@font-face {
+    font-family: 'MullerBlack';
+    src: url(./fonts/MullerBlack.ttf);
+}

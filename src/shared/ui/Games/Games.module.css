@@ -1,0 +1,184 @@
+._ {
+  margin: 133px 0 120px 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  width: fit-content;
+  font-family: "MullerBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 25px;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.menu div {
+  display: flex;
+  gap: 19px;
+}
+
+.menu span {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #c6c6c6;
+}
+
+.games {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 29px;
+}
+
+.buttonWrapper {
+  position: relative;
+}
+
+.gameButton {
+  background-color: transparent;
+  position: relative;
+  border: none;
+}
+
+.gameButton__frame {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gameButton__frame_bitSpin {
+    background: url("./lib/BitSpin.png") no-repeat center center;
+    background-size: cover;
+}
+
+.gameButton__noveltyBlock {
+  position: absolute;
+  top: -19.5px;
+  right: 20px;
+  width: 66px;
+  height: 39px;
+  background: url("./lib/Novelty.svg") no-repeat center center;
+  background-image: cover;
+  text-align: center;
+  line-height: 39px;
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #c6c6c6;
+}
+
+.slideLeftButton {
+  border: none;
+  background-color: transparent;
+  width: 14%;
+  height: auto;
+  position: absolute;
+  bottom: -16px;
+  left: calc(50% - 3px);
+  transform: translateX(-100%);
+}
+
+.slideLeftButton__frame {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slideLeftButton__arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.slideRightButton {
+  border: none;
+  background-color: transparent;
+  width: 14%;
+    height: auto;
+  position: absolute;
+  bottom: -16px;
+  left: calc(50% + 3px);
+}
+
+.slideRightButton__frame {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slideRightButton__arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.gameButton_bitSpin {
+  background: url("./lib/BitSpin.png") no-repeat center center;
+  background-size: cover;
+}
+
+.gameButton__frame_bitSpinWithButtons {
+  background: url("./lib/BitSpinWithButtons.png") no-repeat center center;
+  background-size: cover;
+}
+
+@media (max-width: 1680px) {
+  .games {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  ._ {
+    margin: 50px 0;
+  }
+  .buttonWrapper {
+    width: auto;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .menu span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .arrowIcon {
+    width: 5px;
+    height: 8px;
+  }
+  .gameButton__noveltyBlock {
+    top: -12.5px;
+    width: 43px;
+    height: 25px;
+    background: url("./lib/NoveltySmall.svg") no-repeat center center;
+    font-size: 12px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,16 @@
+._ {
+  width: 100vw;
+  margin-left: 224px;
+  margin-bottom: 120px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 968px) {
+  ._ {
+    margin-left: -5px;
+  }
+}

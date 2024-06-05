@@ -1,0 +1,15 @@
+._ {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+._webp {
+  background: #110f22 url(../../../pages/BitSpinPage/lib/BackFirstGame.webp) no-repeat
+    center center;
+}
+
+._png {
+  background: #110f22 url(../../../pages/BitSpinPage/lib/BackFirstGame.png) no-repeat
+    center center;
+}

@@ -1,0 +1,149 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footerOfferLeft {
+  background: #1e193d;
+  border-radius: 10px;
+  padding: 18px 58px 21px 31px;
+  height: 213px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.title {
+  font-family: "MullerBold";
+  font-size: 25px;
+  line-height: 140%;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+.offerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 29px;
+}
+
+.link {
+  font-family: "MullerRegular";
+  font-size: 16px;
+  line-height: 140%;
+  color: #c6c6c6;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #85cfff;
+  transition: all 0.3s;
+}
+
+.linksWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.footerOfferRight {
+  width: 430px;
+  height: 218px;
+  background: #1e193d;
+  border-radius: 10px;
+  padding: 50px 64px 60px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socialLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 53px;
+    height: 53px;
+    background-image: linear-gradient(180deg, #1a1538 0%, #29234e 100%),
+      linear-gradient(to bottom, #28224d 0%, rgba(40, 34, 77, 0) 100%);
+    box-shadow: 0px 4px 9px -4px #15102e;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media (max-width: 1945px) {
+  .linksWrapper {
+    gap: 7px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footerOfferLeft {
+    padding-inline: 0 27px;
+    gap: 0;
+    width: 430px;
+  }
+  .offerLinks {
+    gap: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .footerOfferLeft {
+    padding: 23px 19px 0;
+    width: 291px;
+    height: 146px;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .offerLinks {
+    gap: auto;
+    justify-content: space-between;
+  }
+  .title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .link {
+    font-size: 12px;
+  }
+  .footerOfferRight {
+    width: 291px;
+    height: 122px;
+    padding: 23px 19px 29px;
+  }
+  .button {
+    width: 40px;
+    height: 40px;
+  }
+  .icon {
+    width: 20px;
+    height: auto;
+  }
+}

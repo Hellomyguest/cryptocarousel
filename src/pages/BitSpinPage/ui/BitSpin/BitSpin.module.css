@@ -1,0 +1,252 @@
+._ {
+  margin-bottom: 120px;
+  width: 100%;
+  max-width: 1350px;
+}
+
+._ h1 {
+  font-family: "MullerBold";
+  font-size: 50px;
+  display: inline-block;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.span {
+  font-family: "MullerRegular";
+  font-size: 20px;
+  line-height: 140%;
+  color: #c6c6c6;
+  margin-bottom: 50px;
+}
+
+.game {
+  display: flex;
+  gap: 65px;
+}
+
+.game__content {
+  position: relative;
+  width: 100%;
+}
+
+.spinWrapper {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  height: 78%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: url("./lib/BitSpinBackground.svg") no-repeat center
+    center;
+  background-size: contain;
+}
+
+.spin {
+  height: 33%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spin_withCoins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spin__video {
+  display: block;
+  height: 80%;
+}
+
+@keyframes markUp {
+  0% {
+    border-radius: 50%;
+  }
+  99% {
+    box-shadow: none;
+    border: none;
+  }
+  100% {
+    border: 1px solid #ff127f;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px 4px #ff127f;
+  }
+}
+
+.spin__video_marked {
+  animation: 2.5s forwards markUp;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.logo__frame {
+  position: absolute;
+  width: 34%;
+  height: auto;
+  animation: 3s rotate infinite;
+}
+
+.logo__mid {
+  width: 34%;
+  height: auto;
+}
+
+.coins {
+  width: auto;
+  height: 80%;
+  margin: auto;
+}
+
+.game__frame {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.game__conditions {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.jackpot__title {
+  font-family: "MullerRegular";
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #c6c6c6;
+  margin-bottom: 15px;
+  margin-top: 35px;
+}
+
+.jackpot__frame {
+  font-family: "MullerBlack";
+  font-size: 40px;
+  line-height: 160%;
+  text-align: center;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  border: 2px solid #ff127f;
+  border-radius: 5px;
+  transform: skew(-15deg);
+  -webkit-transform: skew(-15deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  width: 100%;
+}
+
+@media (max-width: 1945px) {
+  .jackpot__frame {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .game {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .game__conditions {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1280px) {
+  ._ h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+  .span {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .game__startButtonTitle {
+    font-size: 25px;
+  }
+  .game {
+    gap: 40px;
+  }
+  .game__conditions {
+    width: 75%;
+  }
+  .jackpot__frame {
+    font-size: 20px;
+  }
+  .jackpot__title {
+    font-size: 15px;
+    margin-top: 22px;
+  }
+}
+
+@media (max-width: 968px) {
+  .game__conditions {
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  ._ h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .span {
+    font-size: 15px;
+  }
+  .game__startButtonTitle {
+    font-family: "MullerBold";
+    font-size: 15px;
+    text-transform: initial;
+  }
+  .game__conditions  {
+    width: 100%;
+  }
+  .jackpot__frame {
+    line-height: 40px;
+  }
+
+  .jackpot__title {
+    font-size: 12px;
+  }
+}

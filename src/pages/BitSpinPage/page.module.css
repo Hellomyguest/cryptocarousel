@@ -1,0 +1,35 @@
+._webp {
+  background: #110f22 url(./lib/BackFirstGame.webp) no-repeat center center;
+  background-size: cover;
+}
+
+._png {
+  background: #110f22 url(./lib/BackFirstGame.png) no-repeat center center;
+  background-size: cover;
+}
+
+.Gif {
+  position: relative;
+  margin-bottom: 133px;
+  width: 100%;
+}
+
+.breadcrumbs {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 576px) {
+  .breadcrumbs {
+    position: initial;
+    margin-left: 4%;
+    margin-bottom: 18px;
+  }
+}

@@ -1,0 +1,111 @@
+._ {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 400px;
+  height: 200px;
+  border: 2px solid #ff127f;
+  border-radius: 8px;
+  background: #1e193d;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  display: none;
+  opacity: 0;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wrapper_show {
+  animation: show 1s forwards;
+  display: flex;
+}
+
+.closeButton {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  height: 33px;
+  width: 37px;
+  background: url(./lib/CloseButton.svg) no-repeat center center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.crosshair {
+  position: relative;
+}
+
+.crosshair__left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0px;
+  height: 11px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.crosshair__right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0px;
+  height: 11px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.wrapper span {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #c6c6c6;
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    width: 200px;
+    height: 100px;
+  }
+  .wrapper span {
+    font-size: 12px;
+  }
+  .closeButton {
+    top: 5px;
+    right: 5px;
+    height: 16px;
+    width: 18px;
+  }
+  .crosshair__left {
+    height: 7px;
+  }
+
+  .crosshair__right {
+    height: 7px;
+  }
+}

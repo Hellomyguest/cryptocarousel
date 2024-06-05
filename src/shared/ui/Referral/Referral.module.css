@@ -1,0 +1,133 @@
+._ {
+  width: 1290px;
+  height: 470px;
+  background: url(./lib/LongArrow.svg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 148px 40px 70px;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.wrapper {
+  padding-top: 80px;
+  z-index: 1;
+}
+
+.title {
+  font-family: "MullerBold";
+  font-size: 50px;
+  line-height: 50px;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text {
+  font-family: "MullerMedium";
+  font-size: 20px;
+  line-height: 140%;
+  color: #c6c6c6;
+  margin: 20px 0 57px 0;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+.navigateButton {
+  width: 293px;
+  height: 100px;
+  border: none;
+  background: transparent url("./lib/MoreButton.svg") no-repeat center center;
+  background-size: cover;
+  font-family: "MullerBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+@media (max-width: 1945px) {
+  ._ {
+    width: auto;
+  }
+}
+
+@media (max-width: 1280px) {
+  .text {
+    margin-bottom: 20px;
+  }
+  ._ {
+    padding-inline: 15px 0;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 576px) {
+  ._ {
+    background: none;
+    width: 100%;
+    height: auto;
+    padding: 50px 20px;
+  }
+  .wrapper {
+    padding-top: 15px;
+  }
+  .title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .text {
+    margin: 15px 0 30px 0;
+  }
+}
+
+@media (max-width: 495px) {
+  .title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .text {
+    margin: 15px 0 30px 0;
+    font-size: 15px;
+  }
+  .navigateButton {
+    width: 200px;
+    height: 75px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  ._ {
+    padding-top: 30px;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .navigateButton {
+    width: 122px;
+    height: 45px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,375 @@
+._ {
+  z-index: 0;
+  position: relative;
+}
+
+.referral {
+  position: relative;
+  width: 100%;
+}
+
+.referral__img {
+  width: 100%;
+  height: auto;
+}
+
+.referral__breadcrumbs {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.referral__breadcrumbs_small {
+  margin-right: auto;
+  margin-left: 4%;
+  margin-bottom: 18px;
+}
+
+.referral__adress {
+  position: absolute;
+  bottom: 15%;
+  left: 6%;
+  width: 48%;
+}
+
+.tutorial {
+  margin-top: 120px;
+  width: 100%;
+}
+
+.title {
+  width: fit-content;
+  font-family: "MullerBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-clip: text;
+  margin: auto;
+}
+
+.title_leftSided {
+  margin: initial;
+  margin-bottom: 20px;
+}
+
+.cards {
+  margin-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  position: relative;
+}
+
+.backRight {
+  position: absolute;
+  top: 58%;
+  right: 0;
+  transform: translate(100%, -50%);
+  z-index: -1;
+}
+
+.backLeft {
+  position: absolute;
+  top: 49%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  z-index: -1;
+}
+
+.card {
+  width: calc(50% - 15px);
+  position: relative;
+}
+
+.card__img {
+  width: 100%;
+  height: auto;
+}
+
+.informationWrapper {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__title {
+  font-family: "MullerBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 140%;
+
+  text-align: center;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-clip: text;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #c6c6c6;
+}
+
+.text {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #c6c6c6;
+}
+
+.text_leftSided {
+  text-align: left;
+}
+
+.accrual {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.accrual__steps {
+  margin-top: 66px;
+  position: relative;
+}
+
+.accrual__stepsImg {
+  width: 100%;
+  height: auto;
+}
+
+.accrual__stepsImg_small {
+  width: 100%;
+  height: auto;
+  margin-top: 19px;
+}
+
+.accrual__step {
+  width: 20%;
+  position: absolute;
+}
+
+.accrual__step_first {
+  bottom: 10%;
+}
+
+.accrual__step_second {
+  left: 28%;
+}
+
+.accrual__step_third {
+  bottom: 10%;
+  left: 55%;
+}
+
+.accrual__step_fourth {
+  right: 0;
+}
+
+.step__title {
+  font-family: "MullerBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.step__title_blue {
+  color: #2785c2;
+}
+
+.step__title_pink {
+  color: #ff127f;
+}
+
+.step__title_darkPurple {
+  color: #852dee;
+}
+
+.step__title_purple {
+  color: #9e00ff;
+}
+
+.step__divider {
+  margin-top: 12px;
+  margin-bottom: 18px;
+  width: 120px;
+}
+
+.step__divider_blue {
+  border: 2px solid #2785c2;
+}
+
+.step__divider_pink {
+  border: 2px solid #ff127f;
+}
+
+.step__divider_darkPurple {
+  border: 2px solid #852dee;
+}
+
+.step__divider_purple {
+  border: 2px solid #9e00ff;
+}
+
+.step__text {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #c6c6c6;
+}
+
+@media (max-width: 1800px) {
+  .accrual__step_first {
+    bottom: 0;
+  }
+  .accrual__step_third {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1680px) {
+  .cards {
+    margin-top: 60px;
+  }
+  .accrual {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .backRight {
+    width: 405px;
+    height: auto;
+  }
+  .backLeft {
+    width: 185px;
+    height: auto;
+  }
+  .step__divider {
+    margin-top: 6px;
+    margin-bottom: 9px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .accrual__step_first {
+    bottom: 5%;
+  }
+  .accrual__step_third {
+    bottom: 5%;
+  }
+  .step__title {
+    font-size: 20px;
+  }
+  .step__text {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1450px) {
+  .card__title {
+    font-size: 20px;
+  }
+  .card__text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .accrual__step_first {
+    bottom: 0;
+  }
+  .accrual__step_third {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1280px) {
+  .accrual {
+    margin-bottom: 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .backRight {
+    position: initial;
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .referral__breadcrumbs {
+    position: initial;
+    margin-bottom: 18px;
+    margin-left: 4%;
+  }
+  .referral__adress {
+    position: relative;
+    width: 100%;
+    left: initial;
+    margin-top: 20px;
+  }
+  .title {
+    font-size: 20px;
+    text-align: left;
+    margin: initial;
+  }
+  .title_leftSided {
+    margin-bottom: 15px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .cards {
+    margin-top: 30px;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .accrual {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .card__title {
+    font-size: 20px;
+  }
+  .card__text {
+    font-size: 15px;
+  }
+  .text {
+    font-size: 12px;
+  }
+}

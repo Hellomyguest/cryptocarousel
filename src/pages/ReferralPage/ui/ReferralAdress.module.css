@@ -1,0 +1,78 @@
+.referral__frame {
+  width: 100%;
+  height: auto;
+}
+
+.referral__text {
+  position: absolute;
+  left: 6%;
+  top: 50%;
+  width: 80%;
+  transform: translateY(-50%);
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  color: #ffffff;
+}
+
+.referral__link {
+  display: none;
+}
+
+.referral__copyButton {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+}
+
+@media (max-width: 1945px) {
+  .referral__text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1680px) {
+  .referral__text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1480px) {
+  .referral__text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .referral__text {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .referral__text {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 968px) {
+  .referral__text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .referral__text {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 576px) {
+  .referral__text {
+    font-size: 12px;
+  }
+}

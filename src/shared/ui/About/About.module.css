@@ -1,0 +1,111 @@
+.AboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 120px;
+  width: 100%;
+}
+
+.Text {
+  font-family: "MullerRegular";
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #c6c6c6;
+}
+
+.Title {
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  background-clip: text;
+  font-family: "MullerBold";
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+.AboutUsPoints {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.AboutUsTitle {
+  margin: 43px 0 10px 0;
+  font-family: "MullerBold";
+  font-size: 20px;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline-block;
+}
+
+.AboutUsText {
+  font-family: "MullerRegular";
+  font-size: 16px;
+  line-height: 140%;
+  color: #c6c6c6;
+  max-width: 390px;
+}
+
+.AboutOffer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (max-width: 1945px) {
+  .AboutUsPoints {
+    gap: 45px;
+  }
+}
+
+@media (min-width: 1680px) and (max-width: 1945px) {
+  .AboutUsPoints {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 578px) {
+  .Title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .Text {
+    font-size: 12px;
+  }
+  .icon {
+    height: 126px;
+    width: auto;
+  }
+  .AboutUsTitle {
+    margin: 25px 0 5px 0;
+    font-size: 14px;
+  }
+  .AboutUsText {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,152 @@
+._ {
+  width: 315px;
+}
+
+.lottery {
+  background: rgba(30, 25, 61, 0.85);
+  border-radius: 10px;
+  padding: 35px 27px 31px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.gameButton {
+  display: block;
+  width: 261px;
+  height: 100px;
+  background: transparent url("./lib/gameButton.svg") no-repeat center center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  margin-inline: auto;
+  font-family: "MullerBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+
+  color: #ffffff;
+}
+
+.offerSpan {
+  font-family: "MullerBlack";
+  font-size: 30px;
+  line-height: 30px;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-clip: text;
+}
+
+.offerTitle {
+  font-family: "MullerRegular";
+  font-size: 16px;
+  line-height: 16px;
+  color: #c6c6c6;
+}
+
+.offerContainer_jackpot {
+  margin-bottom: 44px;
+}
+
+.offerContainer_timer {
+  margin-bottom: 28px;
+}
+
+.users {
+  background: rgba(30, 25, 61, 0.85);
+  border-radius: 10px;
+  margin-top: 27px;
+  padding: 32px 20px 32px 27px;
+}
+
+.users__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showAllButton {
+  text-decoration: underline;
+  color: #5e5688;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.winnersWrapper {
+  height: auto;
+  max-height: 304px;
+  overflow-y: auto;
+  box-sizing: unset;
+}
+
+.winnersWrapper::-webkit-scrollbar-track {
+  margin: 15px 0 2px;
+  border-radius: 0.5rem;
+  background: transparent;
+}
+
+.offerSpans {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 12px;
+  width: 100%;
+  color: #c6c6c6;
+}
+
+.name {
+  font-family: "MullerRegular";
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.win {
+  font-family: "MullerBlack";
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@media (max-width: 576px) {
+  .offerContainer {
+    margin-bottom: 25px;
+  }
+  .offerTitle {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .offerSpan {
+    font-family: "MullerBold";
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .offer_mobile {
+    height: 42px !important;
+  }
+  .offer_WinnersMobile {
+    margin-top: 11px !important;
+  }
+  .name,
+  .win {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .gameButton {
+    width: 132px;
+    height: 38px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}

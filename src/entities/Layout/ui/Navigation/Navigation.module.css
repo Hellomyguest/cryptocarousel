@@ -1,0 +1,150 @@
+._ {
+  background: rgba(30, 25, 61, 0.85);
+  border-radius: 10px;
+  width: 85px;
+  height: 827px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.notification {
+  width: 200px;
+  height: auto;
+}
+
+.button {
+  width: 53px;
+  height: 53px;
+  position: relative;
+}
+
+.button:last-child {
+  margin-top: auto;
+}
+
+.signIn {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon_menu {
+  width: 24px;
+  height: 18px;
+}
+
+.divider {
+  width: 53px;
+  border: 2px solid #302954;
+}
+
+.buttonsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hint {
+  display: none;
+  position: absolute;
+  top: 50%;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 35px;
+  opacity: 0;
+  cursor: default;
+}
+
+.hint span {
+  font-family: "MullerRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.hint_signIn {
+  width: 184px;
+  left: 40px;
+  background: url("./lib/SignInHint.svg");
+}
+
+.hint_home {
+  width: 275.5px;
+  left: 42px;
+  background: url("./lib/HomeHint.svg");
+}
+
+.hint_games {
+  width: 185px;
+  left: 42px;
+  background: url("./lib/GamesHint.svg");
+}
+
+.hint_referal {
+  width: 332px;
+  left: 45px;
+  background: url("./lib/ReferalHint.svg");
+}
+
+.hint_menu {
+  width: 214px;
+  left: 41px;
+  background: url("./lib/MenuHint.svg");
+}
+
+.hint_language {
+  width: 222px;
+  left: 42px;
+  background: url("./lib/LanguageHint.svg");
+  gap: 18px;
+}
+
+.hint_crypto {
+  width: 259px;
+  left: 45px;
+  background: url("./lib/CryptoHint.svg");
+}
+
+.button:hover .icon path {
+  stroke: #ff127f;
+  transition: all 0.3s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.button:hover .hint {
+  animation: show 0.3s forwards;
+  display: flex;
+}
+
+.button:hover .icon_filled path {
+  fill: #ff127f;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

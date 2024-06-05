@@ -1,0 +1,155 @@
+._ {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 48px;
+  height: 310px;
+  width: 495px;
+  background: url(./lib/SignInFrame.svg) no-repeat center center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  height: 33px;
+  width: 37px;
+  background: url(./lib/CloseButton.svg) no-repeat center center;
+  border: none;
+  cursor: pointer;
+}
+
+.crosshair {
+  position: relative;
+}
+
+.crosshair__left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0px;
+  height: 11px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.crosshair__right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0px;
+  height: 11px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.title {
+  margin-inline: auto;
+  font-family: "MullerHeavy";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 25px;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-clip: text;
+}
+
+.title_mobile {
+  font-family: "MullerBold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttonWrapper_mobile {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.button {
+  height: 144px;
+  width: 158px;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  position: relative;
+}
+
+.button_mobile {
+  width: 119px;
+  height: 93px;
+}
+
+.button__frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.button:hover .button__frame {
+  fill: #ff127f;
+  transition: all 0.5s;
+}
+
+.button__icon {
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+
+.button__icon_mobile {
+  width: 45px;
+  height: 45px;
+}
+
+.button__title {
+  font-family: "MullerHeavy";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 15px;
+  background: linear-gradient(
+    90.36deg,
+    #ffffff 60.02%,
+    #8e8e8e 77.47%,
+    #ededed 95.07%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-clip: text;
+  z-index: 1;
+}
+
+.button__title_mobile {
+  font-family: "MullerRegular";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}

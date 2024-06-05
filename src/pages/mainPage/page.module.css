@@ -1,0 +1,62 @@
+.img {
+  width: 100%;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.videoWrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -76px;
+  left: calc(50% + 112px);
+  transform: translateX(-50%);
+  width: 100vw;
+  height: calc(100% + 76px);
+  background-color: black;
+  z-index: 0;
+}
+
+.video {
+  position: inherit;
+}
+
+.games {
+  position: relative;
+  z-index: 1;
+}
+
+.games::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(50% + 112px);
+  top: -133px;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 133px;
+  background: linear-gradient(black 0%, transparent 100%);
+  z-index: 0;
+}
+
+@media (max-width: 968px) {
+  .videoWrapper::before {
+    left: 50%;
+    top: -100px;
+    height: calc(100% + 100px);
+  }
+  .games::before {
+    left: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .games::before {
+    top: -50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,22 @@
+._:checked {
+  background-color: #ff127f;
+  border-color: #ff127f;
+  background-image: none;
+  margin-top: 2px;
+}
+
+._ {
+  width: 10px;
+  height: 10px;
+  margin-top: 2px;
+  appearance: none;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+  background-image: linear-gradient(#1b183a, #1b183a),
+    linear-gradient(90.36deg, #ffffff 60.02%, #8e8e8e 77.47%, #ededed 95.07%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  cursor: pointer;
+}
